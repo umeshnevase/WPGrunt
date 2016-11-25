@@ -15,7 +15,7 @@ module.exports = function ( grunt ) {
                     flatten: true,
                     cwd: 'assets/',
                     src: ['*.scss'],
-                    dest: '/',
+                    dest: '',
                     ext: '.css'
                 } ]
             }
@@ -44,7 +44,7 @@ module.exports = function ( grunt ) {
 		uglify: {
 			dist: {
                 files: {
-                    'assets/main.min.js': [ 'assets/js/*.*.js' ]
+                    'assets/main.min.js': [ 'assets/js/*.js' ]
                 }
             }
 		},
